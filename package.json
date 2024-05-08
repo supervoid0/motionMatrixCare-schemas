@@ -1,0 +1,46 @@
+{
+  "name": "@motionmatrixcare/schemas",
+  "version": "1.0.1",
+  "description": "motionmatrixcare compatible software",
+  "main": "index.js",
+  "author": "Md Nazmus Sabab",
+  "license": "ISC",
+  "homepage": "",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:supervoid0/motionMatrixCare-schemas.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose"
+  ],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.2",
+    "json-logic-js": "^2.0.1",
+    "moment": "^2.29.4",
+    "mongoose": "^8.2.4",
+    "mongoose-autopopulate": "^1.1.0",
+    "mongoose-lean-defaults": "^2.2.1",
+    "mongoose-lean-virtuals": "^0.9.1",
+    "mongoose-unique-validator": "^5.0.0",
+    "uniqid": "^5.4.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsdoc": "^30.2.4",
+    "eslint-watch": "^7.0.0",
+    "jsdoc": "^4.0.2",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  }
+}
