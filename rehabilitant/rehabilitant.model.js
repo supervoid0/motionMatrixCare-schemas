@@ -8,15 +8,15 @@ const Schema = mongoose.Schema;
 
 const rehabilitantSchema = new Schema(
   {
-    rehabilitantID: {
+    ID: {
       type: String,
       required: true,
       unique: true,
       immutable: true,
       trim: true,
-      default: () => uniqid('U-')
+      default: () => uniqid('I-')
     },
-    ID: {
+    rehabiltantID: {
       type: String,
       required: true,
       unique: true,
