@@ -14,7 +14,7 @@ const rehabilitantSchema = new Schema(
       unique: true,
       immutable: true,
       trim: true,
-      default: () => uniqid('R-')
+      default: () => uniqid('R')
     },
     firstName: {
       type: String,
