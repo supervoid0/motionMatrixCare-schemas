@@ -14,13 +14,7 @@ const rehabilitantSchema = new Schema(
       unique: true,
       immutable: true,
       trim: true,
-      default: () => uniqid('U-')
-    },
-    ID: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true,
+      default: () => uniqid('R-')
     },
     firstName: {
       type: String,
