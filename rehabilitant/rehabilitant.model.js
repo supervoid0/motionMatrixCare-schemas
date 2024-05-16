@@ -38,7 +38,7 @@ const rehabilitantSchema = new Schema(
       type: String,
       required: false,
       trim: true,
-      maxlength: [50, 'Maximum number of characters exceeded']
+      maxlength: [200, 'Maximum number of characters exceeded']
     }
   },
   {
