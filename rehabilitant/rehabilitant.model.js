@@ -34,6 +34,12 @@ const rehabilitantSchema = new Schema(
       type: Date,
       required: false
     },
+    comment: {
+      type: String,
+      required: false,
+      trim: true,
+      maxlength: [50, 'Maximum number of characters exceeded']
+    }
   },
   {
     timestamps: true,
