@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const uniqid = require('uniqid');
 const mongooseUniqueValidator = require('mongoose-unique-validator');
+const { validSexTypes } = require('./rehabilitant.constants');
 // const mongooseLeanVirtuals = require('mongoose-lean-virtuals');
 // const mongooseAutoPopulate = require('mongoose-autopopulate');
 
@@ -39,6 +40,16 @@ const rehabilitantSchema = new Schema(
       required: false,
       trim: true,
       maxlength: [200, 'Maximum number of characters exceeded']
+    },
+    sex: {
+      type: String,
+      required: true,
+      default: validSexTypes[0],
+      trim: true,
+      enum: {
+        values: validSexTypes,
+        message: 'Invalid sex type provided.'
+      }
     }
   },
   {
