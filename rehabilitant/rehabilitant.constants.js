@@ -1,1 +1,1 @@
-export const validSexTypes = ['M', 'F']
+exports.validSexTypes = ['M', 'F']
