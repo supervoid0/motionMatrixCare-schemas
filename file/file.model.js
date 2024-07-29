@@ -54,13 +54,18 @@ const fileSchema = new Schema(
     },
     distance: {
       type: Number,
-      require: true
+      required: true
     },
     duration: {
       type: Number
     },
     comment: {
       type: String
+    },
+    isFrontal: {
+      type: Boolean,
+      required: true,
+      default: false
     }
   },
   {
